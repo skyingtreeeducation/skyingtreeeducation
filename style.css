@@ -740,3 +740,9 @@ footer {
   color: var(--forest-main) !important;
   font-weight: 700 !important;
 }
+.section,
+.course-grid,
+.course-card {
+  max-width: 100%;
+  min-width: 0;
+}
