@@ -825,3 +825,14 @@ a[href*="wa.me"] {
   color: #ffffff !important;
   text-decoration: none !important;
 }
+/* 覆蓋 iPhone Safari 自動偵測電話號碼的藍色超連結樣式 */
+.contact-detail a,
+.contact-detail a[href^="tel"],
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
