@@ -746,3 +746,67 @@ footer {
   max-width: 100%;
   min-width: 0;
 }
+/* 防止手機畫面左右出現多餘白邊 */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* 手機版導覽列與版面適配 */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 0 12px !important;
+  }
+
+  .nav-content {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .logo {
+    margin-right: 0 !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .logo-img {
+    height: 46px !important;
+    max-height: 46px !important;
+  }
+
+  .logo-text {
+    font-size: 1.25rem !important;
+  }
+
+  .navbar nav {
+    width: 100% !important;
+  }
+
+  .nav-links {
+    margin-left: 0 !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+    gap: 14px 18px !important;
+    width: 100% !important;
+  }
+
+  .nav-links a {
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
+  }
+
+  .btn-nav {
+    display: inline-block !important;
+    padding: 6px 14px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .page-banner {
+    padding: 44px 0 40px !important;
+  }
+
+  .page-banner h1 {
+    font-size: 1.85rem !important;
+  }
+}
