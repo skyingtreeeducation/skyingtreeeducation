@@ -810,3 +810,18 @@ html, body {
     font-size: 1.85rem !important;
   }
 }
+/* 確保所有 WhatsApp 按鈕文字永遠保持純白色、無底線 */
+a.btn-gold,
+a.btn-gold:link,
+a.btn-gold:visited,
+a.btn-gold:hover,
+a.btn-gold:active,
+a.btn-nav,
+a.btn-nav:link,
+a.btn-nav:visited,
+a.btn-nav:hover,
+a.btn-nav:active,
+a[href*="wa.me"] {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
